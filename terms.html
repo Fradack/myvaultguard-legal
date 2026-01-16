@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service - MyVaultGuard</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --bg-card: #1a1a1a;
+      --text: #ffffff;
+      --text-secondary: #a0a0a0;
+      --accent: #3b82f6;
+      --border: #333;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .logo svg {
+      width: 80px;
+      height: 80px;
+    }
+    .logo h1 {
+      margin-top: 16px;
+      font-size: 28px;
+    }
+    .lang-switch {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .lang-switch a {
+      color: var(--accent);
+      text-decoration: none;
+      padding: 8px 16px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      margin: 0 8px;
+      transition: all 0.2s;
+    }
+    .lang-switch a:hover, .lang-switch a.active {
+      background: var(--accent);
+      color: white;
+    }
+    .section {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+    h2 {
+      color: var(--accent);
+      margin-bottom: 16px;
+      font-size: 22px;
+    }
+    h3 {
+      margin: 24px 0 12px;
+      font-size: 18px;
+    }
+    p, li {
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    .highlight {
+      background: rgba(59, 130, 246, 0.1);
+      border-left: 4px solid var(--accent);
+      padding: 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+    }
+    .highlight p {
+      margin: 0;
+      color: var(--text);
+    }
+    .warning {
+      background: rgba(239, 68, 68, 0.1);
+      border-left: 4px solid #ef4444;
+    }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#3b82f6"/>
+            <stop offset="100%" style="stop-color:#1d4ed8"/>
+          </linearGradient>
+        </defs>
+        <rect width="120" height="120" rx="20" fill="url(#bgGrad)"/>
+        <rect x="28" y="46" width="64" height="52" rx="8" fill="white"/>
+        <path d="M40 46 V32 A20 20 0 0 1 80 32 V46" stroke="white" stroke-width="8" stroke-linecap="round" fill="none"/>
+        <circle cx="60" cy="66" r="8" fill="#3b82f6"/>
+        <rect x="56" y="66" width="8" height="16" rx="2" fill="#3b82f6"/>
+      </svg>
+      <h1>MyVaultGuard</h1>
+    </div>
+
+    <div class="lang-switch">
+      <a href="#en" class="active" onclick="switchLang('en')">English</a>
+      <a href="#fr" onclick="switchLang('fr')">Français</a>
+    </div>
+
+    <!-- ENGLISH VERSION -->
+    <div id="lang-en" class="lang-section active">
+      <div class="section">
+        <h2>Terms of Service</h2>
+        <p><strong>Last updated:</strong> January 2026</p>
+
+        <p>By using MyVaultGuard, you agree to these terms. Please read them carefully.</p>
+
+        <h3>1. Acceptance of Terms</h3>
+        <p>By installing and using MyVaultGuard, you agree to be bound by these Terms of Service. If you do not agree, please do not use the extension.</p>
+
+        <h3>2. Description of Service</h3>
+        <p>MyVaultGuard is a free password manager browser extension that provides:</p>
+        <ul>
+          <li>Secure local storage of passwords and credentials</li>
+          <li>AES-256-GCM encryption</li>
+          <li>Optional Google Drive backup synchronization</li>
+          <li>Password generation and security audit features</li>
+          <li>Two-factor authentication (TOTP) management</li>
+        </ul>
+
+        <h3>3. User Responsibilities</h3>
+        <p>You are responsible for:</p>
+        <ul>
+          <li><strong>Your master password:</strong> Keep it secure and memorable. We cannot recover it if lost.</li>
+          <li><strong>Regular backups:</strong> Export your data regularly to prevent loss.</li>
+          <li><strong>Device security:</strong> Ensure your device is protected from unauthorized access.</li>
+        </ul>
+
+        <div class="highlight warning">
+          <p><strong>Important:</strong> If you forget your master password, your data cannot be recovered. We do not have access to your encryption keys.</p>
+        </div>
+
+        <h3>4. Privacy</h3>
+        <p>Your privacy is paramount. Please review our <a href="privacy.html" style="color: var(--accent);">Privacy Policy</a> for details on how we handle your data.</p>
+
+        <h3>5. Intellectual Property</h3>
+        <p>MyVaultGuard and its original content, features, and functionality are owned by the developer and are protected by international copyright laws.</p>
+
+        <h3>6. Disclaimer of Warranties</h3>
+        <p>MyVaultGuard is provided "as is" without warranty of any kind. We do not guarantee:</p>
+        <ul>
+          <li>Uninterrupted or error-free service</li>
+          <li>That defects will be corrected</li>
+          <li>That the service is free of viruses or harmful components</li>
+        </ul>
+
+        <h3>7. Limitation of Liability</h3>
+        <p>To the maximum extent permitted by law, the developer shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from:</p>
+        <ul>
+          <li>Your use or inability to use the service</li>
+          <li>Any unauthorized access to your data</li>
+          <li>Loss of data due to forgotten master password</li>
+        </ul>
+
+        <h3>8. Changes to Terms</h3>
+        <p>We may modify these terms at any time. Continued use of MyVaultGuard after changes constitutes acceptance of the new terms.</p>
+
+        <h3>9. Contact</h3>
+        <p>For questions about these terms, contact: <a href="mailto:jonhhomme@gmail.com" style="color: var(--accent);">jonhhomme@gmail.com</a></p>
+      </div>
+    </div>
+
+    <!-- FRENCH VERSION -->
+    <div id="lang-fr" class="lang-section">
+      <div class="section">
+        <h2>Conditions Générales d'Utilisation</h2>
+        <p><strong>Dernière mise à jour :</strong> Janvier 2026</p>
+
+        <p>En utilisant MyVaultGuard, vous acceptez ces conditions. Veuillez les lire attentivement.</p>
+
+        <h3>1. Acceptation des Conditions</h3>
+        <p>En installant et utilisant MyVaultGuard, vous acceptez d'être lié par ces Conditions d'Utilisation. Si vous n'êtes pas d'accord, veuillez ne pas utiliser l'extension.</p>
+
+        <h3>2. Description du Service</h3>
+        <p>MyVaultGuard est une extension de navigateur gratuite de gestion de mots de passe qui fournit :</p>
+        <ul>
+          <li>Stockage local sécurisé des mots de passe et identifiants</li>
+          <li>Chiffrement AES-256-GCM</li>
+          <li>Synchronisation optionnelle de sauvegarde Google Drive</li>
+          <li>Génération de mots de passe et fonctionnalités d'audit de sécurité</li>
+          <li>Gestion de l'authentification à deux facteurs (TOTP)</li>
+        </ul>
+
+        <h3>3. Responsabilités de l'Utilisateur</h3>
+        <p>Vous êtes responsable de :</p>
+        <ul>
+          <li><strong>Votre mot de passe maître :</strong> Gardez-le en sécurité et mémorable. Nous ne pouvons pas le récupérer s'il est perdu.</li>
+          <li><strong>Sauvegardes régulières :</strong> Exportez vos données régulièrement pour éviter toute perte.</li>
+          <li><strong>Sécurité de l'appareil :</strong> Assurez-vous que votre appareil est protégé contre les accès non autorisés.</li>
+        </ul>
+
+        <div class="highlight warning">
+          <p><strong>Important :</strong> Si vous oubliez votre mot de passe maître, vos données ne peuvent pas être récupérées. Nous n'avons pas accès à vos clés de chiffrement.</p>
+        </div>
+
+        <h3>4. Confidentialité</h3>
+        <p>Votre vie privée est primordiale. Consultez notre <a href="privacy.html" style="color: var(--accent);">Politique de Confidentialité</a> pour plus de détails sur la gestion de vos données.</p>
+
+        <h3>5. Propriété Intellectuelle</h3>
+        <p>MyVaultGuard et son contenu original, ses fonctionnalités et fonctions sont la propriété du développeur et sont protégés par les lois internationales sur le droit d'auteur.</p>
+
+        <h3>6. Exclusion de Garanties</h3>
+        <p>MyVaultGuard est fourni "tel quel" sans garantie d'aucune sorte. Nous ne garantissons pas :</p>
+        <ul>
+          <li>Un service ininterrompu ou sans erreur</li>
+          <li>Que les défauts seront corrigés</li>
+          <li>Que le service est exempt de virus ou de composants nuisibles</li>
+        </ul>
+
+        <h3>7. Limitation de Responsabilité</h3>
+        <p>Dans les limites permises par la loi, le développeur ne sera pas responsable des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs résultant de :</p>
+        <ul>
+          <li>Votre utilisation ou incapacité à utiliser le service</li>
+          <li>Tout accès non autorisé à vos données</li>
+          <li>Perte de données due à l'oubli du mot de passe maître</li>
+        </ul>
+
+        <h3>8. Modifications des Conditions</h3>
+        <p>Nous pouvons modifier ces conditions à tout moment. L'utilisation continue de MyVaultGuard après les modifications constitue une acceptation des nouvelles conditions.</p>
+
+        <h3>9. Contact</h3>
+        <p>Pour toute question concernant ces conditions, contactez : <a href="mailto:jonhhomme@gmail.com" style="color: var(--accent);">jonhhomme@gmail.com</a></p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 MyVaultGuard. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
+      document.getElementById('lang-' + lang).classList.add('active');
+      document.querySelector('.lang-switch a[href="#' + lang + '"]').classList.add('active');
+    }
+  </script>
+</body>
+</html>

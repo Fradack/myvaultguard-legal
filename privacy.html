@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - MyVaultGuard</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --bg-card: #1a1a1a;
+      --text: #ffffff;
+      --text-secondary: #a0a0a0;
+      --accent: #3b82f6;
+      --border: #333;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .logo svg {
+      width: 80px;
+      height: 80px;
+    }
+    .logo h1 {
+      margin-top: 16px;
+      font-size: 28px;
+    }
+    .lang-switch {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .lang-switch a {
+      color: var(--accent);
+      text-decoration: none;
+      padding: 8px 16px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      margin: 0 8px;
+      transition: all 0.2s;
+    }
+    .lang-switch a:hover, .lang-switch a.active {
+      background: var(--accent);
+      color: white;
+    }
+    .section {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+    h2 {
+      color: var(--accent);
+      margin-bottom: 16px;
+      font-size: 22px;
+    }
+    h3 {
+      margin: 24px 0 12px;
+      font-size: 18px;
+    }
+    p, li {
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    .highlight {
+      background: rgba(59, 130, 246, 0.1);
+      border-left: 4px solid var(--accent);
+      padding: 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+    }
+    .highlight p {
+      margin: 0;
+      color: var(--text);
+    }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#3b82f6"/>
+            <stop offset="100%" style="stop-color:#1d4ed8"/>
+          </linearGradient>
+        </defs>
+        <rect width="120" height="120" rx="20" fill="url(#bgGrad)"/>
+        <rect x="28" y="46" width="64" height="52" rx="8" fill="white"/>
+        <path d="M40 46 V32 A20 20 0 0 1 80 32 V46" stroke="white" stroke-width="8" stroke-linecap="round" fill="none"/>
+        <circle cx="60" cy="66" r="8" fill="#3b82f6"/>
+        <rect x="56" y="66" width="8" height="16" rx="2" fill="#3b82f6"/>
+      </svg>
+      <h1>MyVaultGuard</h1>
+    </div>
+
+    <div class="lang-switch">
+      <a href="#en" class="active" onclick="switchLang('en')">English</a>
+      <a href="#fr" onclick="switchLang('fr')">Français</a>
+    </div>
+
+    <!-- ENGLISH VERSION -->
+    <div id="lang-en" class="lang-section active">
+      <div class="section">
+        <h2>Privacy Policy</h2>
+        <p><strong>Last updated:</strong> January 2026</p>
+
+        <div class="highlight">
+          <p><strong>MyVaultGuard is designed with privacy as a core principle. Your passwords and personal data are encrypted locally and never transmitted to our servers.</strong></p>
+        </div>
+
+        <h3>1. Data Collection</h3>
+        <p>MyVaultGuard does <strong>NOT</strong> collect:</p>
+        <ul>
+          <li>Your passwords or credentials</li>
+          <li>Your browsing history</li>
+          <li>Personal identification information</li>
+          <li>Usage analytics or telemetry</li>
+          <li>Any data for advertising purposes</li>
+        </ul>
+
+        <h3>2. Data Storage</h3>
+        <p>All your data is:</p>
+        <ul>
+          <li><strong>Encrypted locally</strong> using AES-256-GCM encryption</li>
+          <li><strong>Stored on your device</strong> using Chrome's secure storage API</li>
+          <li><strong>Never transmitted</strong> to any external server without encryption</li>
+        </ul>
+
+        <h3>3. Google Drive Sync (Optional)</h3>
+        <p>If you choose to enable Google Drive synchronization:</p>
+        <ul>
+          <li>Your data is <strong>encrypted before</strong> being uploaded</li>
+          <li>We only access the specific folder created for MyVaultGuard</li>
+          <li>We cannot read your passwords - only you can decrypt them with your master password</li>
+          <li>You can disable sync at any time</li>
+        </ul>
+
+        <h3>4. Permissions Explained</h3>
+        <ul>
+          <li><strong>Storage:</strong> To save your encrypted vault locally</li>
+          <li><strong>Tabs:</strong> To detect login forms for autofill</li>
+          <li><strong>Identity:</strong> For optional Google Drive authentication</li>
+        </ul>
+
+        <h3>5. Third-Party Services</h3>
+        <p>MyVaultGuard may optionally connect to:</p>
+        <ul>
+          <li><strong>Have I Been Pwned API:</strong> To check if passwords appear in data breaches (only password hashes are sent, never actual passwords)</li>
+          <li><strong>Google Drive:</strong> For optional encrypted backup sync</li>
+        </ul>
+
+        <h3>6. Your Rights</h3>
+        <p>You have full control over your data:</p>
+        <ul>
+          <li>Export your data at any time</li>
+          <li>Delete all data by uninstalling the extension</li>
+          <li>Disable any optional features</li>
+        </ul>
+
+        <h3>7. Contact</h3>
+        <p>For privacy concerns, contact us at: <a href="mailto:jonhhomme@gmail.com" style="color: var(--accent);">jonhhomme@gmail.com</a></p>
+      </div>
+    </div>
+
+    <!-- FRENCH VERSION -->
+    <div id="lang-fr" class="lang-section">
+      <div class="section">
+        <h2>Politique de Confidentialité</h2>
+        <p><strong>Dernière mise à jour :</strong> Janvier 2026</p>
+
+        <div class="highlight">
+          <p><strong>MyVaultGuard est conçu avec la confidentialité comme principe fondamental. Vos mots de passe et données personnelles sont chiffrés localement et ne sont jamais transmis à nos serveurs.</strong></p>
+        </div>
+
+        <h3>1. Collecte de Données</h3>
+        <p>MyVaultGuard ne collecte <strong>PAS</strong> :</p>
+        <ul>
+          <li>Vos mots de passe ou identifiants</li>
+          <li>Votre historique de navigation</li>
+          <li>Vos informations personnelles d'identification</li>
+          <li>Des analyses d'utilisation ou télémétrie</li>
+          <li>Aucune donnée à des fins publicitaires</li>
+        </ul>
+
+        <h3>2. Stockage des Données</h3>
+        <p>Toutes vos données sont :</p>
+        <ul>
+          <li><strong>Chiffrées localement</strong> avec le chiffrement AES-256-GCM</li>
+          <li><strong>Stockées sur votre appareil</strong> via l'API de stockage sécurisé de Chrome</li>
+          <li><strong>Jamais transmises</strong> à un serveur externe sans chiffrement</li>
+        </ul>
+
+        <h3>3. Synchronisation Google Drive (Optionnelle)</h3>
+        <p>Si vous activez la synchronisation Google Drive :</p>
+        <ul>
+          <li>Vos données sont <strong>chiffrées avant</strong> l'envoi</li>
+          <li>Nous n'accédons qu'au dossier spécifique créé pour MyVaultGuard</li>
+          <li>Nous ne pouvons pas lire vos mots de passe - seul vous pouvez les déchiffrer avec votre mot de passe maître</li>
+          <li>Vous pouvez désactiver la sync à tout moment</li>
+        </ul>
+
+        <h3>4. Permissions Expliquées</h3>
+        <ul>
+          <li><strong>Stockage :</strong> Pour sauvegarder votre coffre-fort chiffré localement</li>
+          <li><strong>Onglets :</strong> Pour détecter les formulaires de connexion pour le remplissage automatique</li>
+          <li><strong>Identité :</strong> Pour l'authentification Google Drive optionnelle</li>
+        </ul>
+
+        <h3>5. Services Tiers</h3>
+        <p>MyVaultGuard peut optionnellement se connecter à :</p>
+        <ul>
+          <li><strong>API Have I Been Pwned :</strong> Pour vérifier si des mots de passe apparaissent dans des fuites de données (seuls les hashs sont envoyés, jamais les mots de passe réels)</li>
+          <li><strong>Google Drive :</strong> Pour la synchronisation optionnelle des sauvegardes chiffrées</li>
+        </ul>
+
+        <h3>6. Vos Droits</h3>
+        <p>Vous avez un contrôle total sur vos données :</p>
+        <ul>
+          <li>Exporter vos données à tout moment</li>
+          <li>Supprimer toutes les données en désinstallant l'extension</li>
+          <li>Désactiver les fonctionnalités optionnelles</li>
+        </ul>
+
+        <h3>7. Contact</h3>
+        <p>Pour toute question de confidentialité, contactez-nous : <a href="mailto:jonhhomme@gmail.com" style="color: var(--accent);">jonhhomme@gmail.com</a></p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 MyVaultGuard. All rights reserved.</p>
+      <p><a href="terms.html">Terms of Service</a></p>
+    </footer>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
+      document.getElementById('lang-' + lang).classList.add('active');
+      document.querySelector('.lang-switch a[href="#' + lang + '"]').classList.add('active');
+    }
+  </script>
+</body>
+</html>
